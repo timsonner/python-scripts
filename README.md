@@ -1,2 +1,2 @@
-# python-institute-scripts
+# python-scripts
 examples of python code
