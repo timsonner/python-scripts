@@ -8,9 +8,10 @@ subprocess.run(["git", "remote", "add", "origin", git_remote_add_address])
 #call git add on all files in directory
 subprocess.run(["git", "add", "."], check=True, stdout=subprocess.PIPE)
 #get input if commit message
-commit_message = input("Enter commit message: ")
+commit_input = input("Enter commit message: ")
+full_commit_message = '"' + commit_input + '"'
 #call git commit
-subprocess.run(["git", "commit", "-m", commit_message], check=True, stdout=subprocess.PIPE)
+subprocess.run(["git", "commit", "-m", full_commit_message], check=True, stdout=subprocess.PIPE)
 #call git pull
 subprocess.run(["git", "pull", "origin", "master"])
 #call git pus
