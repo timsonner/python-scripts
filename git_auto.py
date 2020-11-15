@@ -12,5 +12,6 @@ commit_message = input("Enter commit message: ")
 #call git commit
 subprocess.run(["git", "commit", "-m", commit_message], check=True, stdout=subprocess.PIPE)
 #call git pull
-subprocess.run(["git", "pull", "-u", "origin", "master"])
-
+subprocess.run(["git", "pull", "origin", "master"])
+#call git pus
+subprocess.run(["git", "push", "-u", "origin", "master"])
