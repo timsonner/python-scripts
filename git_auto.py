@@ -13,6 +13,6 @@ full_commit_message = '"' + commit_input + '"'
 #call git commit
 subprocess.run(["git", "commit", "-m", full_commit_message], check=True, stdout=subprocess.PIPE)
 #call git pull
-subprocess.run(["git", "pull", "origin", "master"])
+subprocess.run(["git", "pull", "origin", "master"], check=True, stdout=subprocess.PIPE)
 #call git pus
-subprocess.run(["git", "push", "-u", "origin", "master"])
+subprocess.run(["git", "push", "-u", "origin", "master"], check=True, stdout=subprocess.PIPE)
