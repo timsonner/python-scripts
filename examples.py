@@ -1,17 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 #prints exponents in a range
 pow = 1
 for exp in range(16):
     print("2 to the power of", exp, "is", pow)
     pow *= 2
-
-
-# In[9]:
 
 
 # break - example
@@ -29,9 +20,6 @@ for i in range(1, 6):
         continue    
     print("Inside the loop.", i)
 print("Outside the loop.")
-
-
-# In[3]:
 
 
 #usage of while and break
@@ -52,18 +40,12 @@ else:
     print("You haven't entered any number.")
 
 
-# In[2]:
-
-
 #usage of time module and range
 import time
 for second in range(1, 6):    
     print(second, "Mississippi")    
     time.sleep(1)    
 print("Ready or not, here I come!")
-
-
-# In[ ]:
 
 
 #while loop and continue usage
@@ -87,8 +69,6 @@ else:
     print("You haven't entered any number.")
 
 
-# In[1]:
-
 
 #while loop loop until answered
 while True:
@@ -98,9 +78,6 @@ while True:
         break
     print(word,"is incorrect")
 print(word,"is correct")
-
-
-# In[2]:
 
 
 #Removes vowels from a word
@@ -123,9 +100,6 @@ for letter in userWord:
 print(wordWithoutVowels)
 
 
-# In[6]:
-
-
 #demontrates while and else usage
 i = 1
 while i < 5:    
@@ -142,8 +116,6 @@ else:
     print("else:", i)
 
 
-# In[ ]:
-
 
 #counts blocks of pyramid
 blocks = int(input("Enter the number of blocks: "))
@@ -156,9 +128,6 @@ while inlayer <= blocks:
     inlayer += 1
 
 print("The height of the pyramid:", height)
-
-
-# In[1]:
 
 
 # Walther Collatz mathematical hypothesis
@@ -179,8 +148,6 @@ else:
 	print("Bad c0 value")
 
 
-# In[1]:
-
 
 #for loop to print odd numbers
 for i in range(0, 11):
@@ -194,8 +161,6 @@ while x < 11:
     x += 1
 
 
-# In[ ]:
-
 
 #for loop finds @ and prints everything before it
 for ch in "john.smith@pythoninstitute.org":
@@ -204,18 +169,8 @@ for ch in "john.smith@pythoninstitute.org":
     print(ch, end="")
 
 
-# In[ ]:
 
 
-#for loop finds and replaces 0 with x in a string
-for digit in "0165031806510":
-    if digit == "0":
-        print("x", end="")
-        continue
-    print(digit, end="")
-
-
-# In[ ]:
 
 
 #while countdown
@@ -236,7 +191,6 @@ else:
     print(num)
 
 
-# In[ ]:
 
 
 
